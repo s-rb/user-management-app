@@ -1,9 +1,8 @@
 import Card from "../UI/Card";
 import styles from "./CreateUser.module.css";
 import Button from "../UI/Button";
-import {useState} from "react";
+import React, {useState, Fragment} from "react";
 import ErrorModal from "../UI/ErrorModal";
-import Wrapper from "../helpers/Wrapper";
 
 const CreateUser = (props) => {
 
@@ -41,7 +40,7 @@ const CreateUser = (props) => {
     }
 
     return (
-        <Wrapper>
+        <Fragment>
             {error && <ErrorModal onCloseModal={errorHandler} title={error.title} message={error.message}/>}
             <Card className={styles.input}>
                 <form onSubmit={createUserHandler}>
@@ -52,7 +51,7 @@ const CreateUser = (props) => {
                     <Button type='submit'>Добавить пользователя</Button>
                 </form>
             </Card>
-        </Wrapper>
+        </Fragment>
     )
 }
 
