@@ -5,7 +5,6 @@ import {useState} from "react";
 function App() {
 
     const [userList, setUserList] = useState([])
-
     const createUserHandler = (name, age) => {
         setUserList((prevUserList) => {
             return [...prevUserList, {name: name, age: age, id: Math.random().toString()}];
