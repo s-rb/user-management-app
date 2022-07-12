@@ -1,0 +1,43 @@
+.new-user__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.new-user__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+.new-user__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.new-user__actions {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #2a5b84;
+    background-color: #2a5b84;
+    color: #fefae1;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+/*.new-user {*/
+/*    background-color: #aac4d1;*/
+/*    padding: 1rem;*/
+/*    margin: 2rem auto;*/
+/*    width: 30rem;*/
+/*    max-width: 95%;*/
+/*    border-radius: 10px;*/
+/*    text-align: center;*/
+/*    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);*/
+/*}*/
